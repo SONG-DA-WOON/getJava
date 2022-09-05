@@ -5,16 +5,17 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 // collection 인터페이스
-// Set : HashSet, TreeSet : 순서를 유지하지 않는 데이터의 집합으로 데이터의 중복을 허용하지 않는다.
-// List : LinkedList, Vector, ArrayList : 순서가 있는 데이터의 집합으로 데이터의 중복을 허용한다.
+// Set : HashSet, TreeSet, LinkedHashSet : 순서를 유지하지 않는 데이터의 집합으로 데이터의 중복을 허용하지 않는다.
+// List : LinkedList, Vector, ArrayList, Vector : 순서가 있는 데이터의 집합으로 데이터의 중복을 허용한다.
 // Queue : LinkedList, PriorityQueue : List와 유사
-// Map : Hashtable, HashMap, TreeMap : 키(key),값(value)의 쌍으로 이루어진 데이터의 집합으로, 순서는 유지되지 않으며 키의 중복을 허용하지 않느나 값은 중복은 허용한다.
+// Map : Hashtable, HashMap, TreeMap, SortedMap : 키(key),값(value)의 쌍으로 이루어진 데이터의 집합으로, 순서는 유지되지 않으며 키의 중복을 허용하지 않느나 값은 중복은 허용한다.
 
 public class Ex04 {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
 
         // 자료 추가 => put(key값, value값);
+        // map은 순서는 랜덤, 나올때도 랜덤
 
         map.put("name", "홍길동");
         map.put("addr", "대전");
